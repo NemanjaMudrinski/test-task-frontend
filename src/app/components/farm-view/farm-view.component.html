@@ -1,0 +1,8 @@
+<h3 style="text-align: center;">Edit Farm</h3>
+    <div style="margin-left: 450px;" class="center">
+        <div class="form-group col-md-6">
+            <label for="farmName">Farm Name</label>
+            <input type="text" class="form-control" id="farmName" [(ngModel)]="farm.farmName" placeholder="Farm Name">
+        </div>
+        <button  type="submit" class="btn btn-primary" (click)="edit()">Save Changes</button>
+    </div>

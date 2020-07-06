@@ -1,0 +1,23 @@
+html[data-theme="dark"] {
+    --primary-theme-color: #17242B;//hsla(0, 0%, 12%, 1); // #1F1F1F;
+    --secondary-theme-color: #29414E; //hsla(0, 0%, 16%, 1); // #282828;
+    --third-theme-color:#C5C6C7;
+    --fourth-theme-color: #324F61;
+    --fifth-theme-color: #21333b; //hsla(198, 28%, 18%, 1)
+  }
+  
+html[data-theme="light"] {
+  --primary-theme-color: #79C2EA;//hsla(0, 0%, 71%, 1); // #B5B5B5;
+  --secondary-theme-color: #E5F0F5; //hsla(0, 0%, 99%, 1); // #FCFCFC;
+  --third-theme-color: #DCD0C0;
+  --fourth-theme-color: #79C2EA;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+

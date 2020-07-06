@@ -1,0 +1,16 @@
+<div class="component-container">
+    <form class="login-container"  #loginForm="ngForm">
+        <h2 style="margin-top: 0;">Sign up</h2>
+        <br>
+        <br>
+        <br>
+        <input class="clr-input" name="email" type="email" placeholder="Email" [(ngModel)]="user.email"><br>
+        <input class="clr-input" name="name" type="text" placeholder="Name" [(ngModel)]="user.name"><br>
+        <input class="clr-input" name="password" type="password" placeholder="Password" [(ngModel)]="user.password" minlength="8" #password="ngModel">
+        <div *ngIf="password.errors?.minlength">
+            Password must be at least 8 characters long!
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary btn-block" (click)="save()">Sign up</button>
+    </form>
+</div>

@@ -1,0 +1,30 @@
+.new-client-container{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 20px;
+    background-color: var(--primary-theme-color);
+    text-align: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.credentials {
+    width: 50%;
+}
+
+.down-part {
+    display: flex;
+}
+
+.left-part {
+    width: 40%;
+    margin: auto;
+}
+
+.right-part {
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}

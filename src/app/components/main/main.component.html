@@ -1,0 +1,27 @@
+<div *ngIf="isLoggedIn" class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">List of Farms</h5>
+                    <p>Click on the see button to find out more!</p>
+                    <a routerLink="/farms-table" class="btn btn-primary">See</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">List of Accounts</h5>
+                    <p>Click on the see button to find out more!</p>
+                    <a routerLink="/accounts-table" class="btn btn-primary">See</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!isLoggedIn" class=container4>
+     <h1 style="text-align: center; padding-top: 50px;">Welcome to Cyrillic home page!</h1>
+     <h3 style="text-align: center; padding-top: 50px;">Please log in to see more features!</h3>
+     <h3 style="text-align: center; padding-top: 50px;">Cyrillic Software Team</h3>
+</div>

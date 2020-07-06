@@ -1,0 +1,25 @@
+<div> 
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" routerLink="/">Cyrillic Software</a>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="nav-link" [routerLink]="['profile/'+loggedUserEmail]">Profile</a>
+                </li>
+                <li class="nav-item" *ngIf="!isLoggedIn">
+                    <a class="nav-link" routerLink="/login">Login</a>
+                </li>
+                <li class="nav-item" *ngIf="!isLoggedIn">
+                <a class="nav-link" routerLink="/register">Register</a>
+            </li>
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a class="nav-link" href="" (click)="onLogout()">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>        
+</div> 
+<br>
+

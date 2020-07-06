@@ -1,0 +1,40 @@
+<div class="container">
+    <h5>Accounts</h5>
+    <br>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" (input)="filterSearch($event.target.value)" placeholder="Search" aria-label="Search">
+    </form>
+    <br>
+    <table class="table table-sm">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Type</th>
+                <th scsope="col">View</th>
+                <th scsope="col">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let a of userAccounts | filterSearch : searchText | paginate: { itemsPerPage: 5, currentPage: pa }; let i = index">
+                <th scope="row">{{i + 1}}</th>
+                <td>{{a.type}}</td>
+                <td>
+                    <button [routerLink]="['/account-view', a.id]" class="btn btn-primary btn-sm">View</button>
+                </td>
+                <td>
+                    <button (click)="delete(a.id)" class="btn btn-danger btn-sm">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="pa = $event"></pagination-controls>
+</div>
+
+<h3 style="text-align: center;">Add an Account</h3>
+<div style="margin-left: 450px;" class="center">
+    <div class="form-group col-md-6">
+        <label for="type">Type</label>
+        <input type="text" class="form-control" id="type" [(ngModel)]="account.type" placeholder="Type">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="save()">Save Changes</button>
+</div>

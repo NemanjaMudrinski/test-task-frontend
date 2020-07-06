@@ -1,0 +1,47 @@
+.exercise-drop-zone {
+    width: 98%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.exercise-item {
+    width: 98%;
+    height: 40px;
+    margin-bottom: 4px;
+    display: flex;
+    background-color: var(--fourth-theme-color);
+    cursor: grab;
+}
+
+.exercise-img {
+    height: 40px;
+    width: auto;
+}
+
+.exercise-zone-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-rest {
+    width: 180px;
+    margin-top: 2rem;
+}
+
+.item-data {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

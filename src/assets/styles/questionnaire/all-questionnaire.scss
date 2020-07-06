@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.header-search {
+    background-color: #1b2a32;
+    display: flex;
+}
+
+
+.new-questionnaire,
+.single-questionnaire-preview {
+    height: 25vh;
+    width: 24vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #5fa1bd;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.new-questionnaire {
+    padding: 1%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.new-questionnaire, 
+.single-questionnaire-preview {
+    transition: box-shadow 0.2s ease-in-out;
+}
+.new-questionnaire:hover, 
+.single-questionnaire-preview:hover {
+    box-shadow: 0px 12px 10px 4px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.single-questionnaire-preview {
+    .top-section,
+    .bottom-section {
+        width: 100%;
+    }
+    .top-section {
+        padding: 2%;
+        height: 40%;
+        background-image: url("https://cdn.forms.office.net/forms/images/theme/default-4.png");
+    }
+    .bottom-section {
+        height: 60%;
+        background-color: whitesmoke;
+        padding: 4.5%;
+        font-size: 2.5vh;
+        color: rgb(66, 66, 66);
+    }
+}

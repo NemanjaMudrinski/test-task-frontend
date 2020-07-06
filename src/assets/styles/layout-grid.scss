@@ -1,0 +1,112 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--secondary-theme-color);
+    height: 100vh;
+}
+
+.top {
+    background-color: var(--primary-theme-color);
+    height: 5vh;
+}
+
+.bottom {
+    flex-direction: row;
+    display: flex;
+    height: 95vh;
+}
+
+.left {
+    background-color: var(--primary-theme-color);
+    width: 3%;
+    height: 95vh;
+}
+
+.right {
+    min-width: 97%;
+    overflow-y: auto;
+    background-color: var(--secondary-theme-color);
+}
+
+.dynamic-container {
+    display: flex;
+    flex-direction: row;
+    overflow-y: auto;
+}
+
+.component-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    max-height: 95vh;
+    padding: 15px;
+}
+
+.display-all-component {
+    background-color: var(--fourth-theme-color);;
+    height: 120px;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    margin-top: 20px;
+    position: relative;
+    cursor: grab;
+}
+
+.exercise-name {
+    text-align: center;
+    align-items: center;
+    width: 140px;
+    height: 30px;
+}
+
+.settings-icon {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    // width: 0;
+    // height: 0;
+}
+
+.drop-zone-component {
+    background: var(--fourth-theme-color);
+    width: 40vw;
+    height: 20vh;
+    margin: 3%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.drop-zone-item {
+    margin: 10px;
+    background-color: aquamarine;
+    height: 100px;
+    width: 100px;
+}
+
+.cdk-drop-dragging .cdk-drag {
+    transition: transform 500ms cubic-bezier(0, 0, 0.2, 1);
+  }
+  
+  .cdk-drag-animating {
+    transition: transform 550ms cubic-bezier(0, 0, 0.2, 1);
+  
+  }
+  
+  .cdk-drag-placeholder {
+    opacity: 0;
+  }
+  
+  cdk-drop {
+    display: block;
+    min-height: 100vh;
+  }

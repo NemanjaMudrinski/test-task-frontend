@@ -1,0 +1,11 @@
+.grid-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.exercises-zone {
+    // width: 98%;
+    // height: 70vh;
+    overflow-y: auto;
+}
